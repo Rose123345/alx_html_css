@@ -1,0 +1,27 @@
+/* base.css */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #1e90ff;
+}
