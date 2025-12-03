@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="8-styles.css">
+    </head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <img src="images/logo_headphones.png" alt="Headphones logo">
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#what-we-do">what we do</a></li>
+                <li><a href="#our-results">our results</a></li>
+                <li><a href="#contact-us">contact us</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero container">
+            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+            <h2>Lorem ipsum dolor set amet lorem ipsum dolor set</h2>
+
+            <a href="#" class="btn">CALL TO ACTION</a>
+
+            <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </section>
+    </header>
+
+    <!-- What we do section -->
+    <section id="what-we-do" class="what-we-do">
+        <div class="container">
+            <h2 class="section-title">What we do…</h2>
+            <p class="section-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="features">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="holberton_school-icon-ic_sound" aria-hidden="true"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="holberton_school-icon-ic_video" aria-hidden="true"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="holberton_school-icon-ic_music" aria-hidden="true"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <i class="holberton_school-icon-ic_hearing" aria-hidden="true"></i>
+                    </div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our results section -->
+    <section id="our-results" class="our-results">
+        <div class="container">
+            <h2 class="section-title">Our results</h2>
+            <p class="section-subtitle">Numbers that show the impact of our work — growth, reach and satisfaction.</p>
+
+            <div class="result-grid">
+                <article class="result-card">
+                    <div class="result-number">5,000+</div>
+                    <div class="result-label">Happy Customers</div>
+                </article>
+
+                <article class="result-card">
+                    <div class="result-number">12,400</div>
+                    <div class="result-label">Projects Delivered</div>
+                </article>
+
+                <article class="result-card">
+                    <div class="result-number">98%</div>
+                    <div class="result-label">Satisfaction Rate</div>
+                </article>
+
+                <article class="result-card">
+                    <div class="result-number">24</div>
+                    <div class="result-label">Awards Won</div>
+                </article>
+            </div>
+
+            <div class="result-cta">
+                <a href="#contact-us" class="btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us section -->
+    <section id="contact-us" class="contact-us">
+        <div class="container">
+            <h2 class="section-title">Contact us</h2>
+            <p class="section-subtitle">Have a question or want to work together? Send us a message — we usually reply within 24 hours.</p>
+
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choose a subject</option>
+                            <option>General enquiry</option>
+                            <option>Partnership</option>
+                            <option>Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone (optional)</label>
+                        <input id="phone" name="phone" type="tel" pattern="[0-9+ ()-]{7,}" placeholder="+1 555 555 5555">
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell us more..."></textarea>
+                    </div>
+
+                    <div class="form-group full form-actions">
+                        <label class="checkbox-label"><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
+                        <button type="submit" class="btn">Send message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Headphones</h3>
+                    <ul>
+                        <li><a href="#what-we-do">What we do</a></li>
+                        <li><a href="#our-results">Our results</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Headphones. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="8-script.js"></script>
+</body>
+</html>
